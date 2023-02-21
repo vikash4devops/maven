@@ -2,10 +2,10 @@ pipeline{
      agent any
      tools {
         maven 'maven'
-          }
-     steges{
-        stege('build'){
-        steps{
+     }
+     stages{
+        stage('build'){
+         steps{
           sh 'mvn clean package'
          }
         }
